@@ -15,7 +15,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Layout-4</title>
     <style>
       /* common css strat */
       h1,
@@ -34,44 +34,111 @@
         margin: 0%;
         text-decoration: none;
       }
+    
       /* common css end */
+        body{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 11px solid gray;}
       /* section1 css start */
       #about_section-1_part1 {
         height: 260px;
         background-color: black;
         color: white;
         padding-top: 5%;
-        padding-left: 5%;
+        padding-left: 11%;
       }
       #about_section-1_part2 {
         background-color: rgb(255, 255, 255);
-        font-size: 150%;
-        padding-top: 1%;
-        padding-left: %;
+
       }
-      #about_section-1_part3 {
-        /* background-color: aqua; */
+      #about_section-1_part3{
+        background-color:rgb(248, 248, 248);
+
       }
+      #addreshs{
+        position: absolute;
+        font-size: x-large;
+        padding-left:40%;
+        padding-top:1% ;
+       }
+       #font{
+        position: absolute;
+        font-size: 300%;
+        padding-top: 40px;
+        top: 10%;
+       }
+       #font-2{
+        position: absolute;
+        font-size: 300%;
+        padding-top: 66px;
+        padding-left: 17%;
+        top: 10%;
+       }
+       #plus{
+        position: absolute;
+        font-size: 50px;
+        /* bottom: 20px; */
+        top: 48px;
+        left: 156px;
+        font-weight:bolder;
+       }
+       #agency{
+      
+        font-size:x-large;
+        text-align: center;
+        margin-top: 40px;
+       }
       /* section1 css end */
       /* section2 css start */
-      #about_section-2_part {
-        background-image: url("https://t3.ftcdn.net/jpg/02/02/83/32/360_F_202833262_LyxXuD5tAipmExDePFIbACnqagGH2SSE.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        position: relative;
-        /* height: 1500px; */
-        display: flex;
-        flex-wrap: wrap;
+
+      #image{
+       height: 100%;
+       width: 100%;
+       position:relative;
+    }
+    #left{
+      left: 0%;
+      position:absolute;
+      height: 132%;
+      width: 100%;
+      background-color: rgba(55, 148, 210, 0.687);
+    }
+     #right{
+      position: absolute;
+      left: 75%;
+      height: 400px;
+      width: 25%;
+      background-color:rgba(222, 78, 131, 0.59);
+    }
+      #business{
+        padding-top: 30%;
+        font-size:1300%;
+        color: rgba(255, 255, 255, 0.454);
+
       }
+       #contain{
+          position:absolute;
+          top: 10%;
+          left: 8%;
+          color: white;
+          font-size:700%;
+        }
+          .underline{
+            margin-top:3%;
+            height: 13px;
+            width: 215px;
+            background-color: white;
+
+          }
       /* section2 css end */
       /* section3 css startT */
       #about_section-3_part-1 {
         height: 250px;
+        font-size:250%;
         padding-top: 2.5%;
-        font-size:200ppx;
         background-color: rgb(248, 248, 248);
-        padding-left: 15%;
-        
+        padding-left: 14%;
+        text-transform:;
       }
       #about_section-3_part-2 {
          background-color: rgb(248, 248, 248);
@@ -81,12 +148,18 @@
          font-size: 130%;
          font-style: italic;
         }
-        .titel{
-          text-align: left;
-        }
-      /* section3 css end */
 
-      /* section4 css start */
+        #line{
+          position: absolute;
+          left: 45%;
+          margin-top: 2%;
+          height: 50%;
+          width:10px;
+          background-color:rgb(246,15,120);
+        }
+       
+      /* section3 css end */
+       /* section4 css start */
       #about_section-4 {
         padding: 2%;
         padding-left: 5%;
@@ -113,7 +186,6 @@
         background-color: rgb(238,81,135);
       }
       /* section4 css end */
-
       /* section5  css start */
       #about_section-5{
         text-align: center;
@@ -137,66 +209,41 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xl-4" id="about_section-1_part1">
-          +<span>plus</span><br><span>one</span><br> <span style="font-size:xx-large;text-align: center;">Creative Agency</span>
+          <strong><span id="font">Plus</span><br><div style="color:rgb(246,15,120);" id="plus">+</div><span id="font-2">one</span><br><br></strong> <span id="agency">Creative Agency</span>
         </div>
-        <div class="col-xl-5" id="about_section-1_part2">
-          <strong>Worldwide Communications.</strong>
+        <div class="col-xl-4" id="about_section-1_part2"></div>
+        <div class="col-xl-4" id="about_section-1_part3">`</div> 
+        <div id="addreshs"> 
+            <strong>Worldwide Communications.<br><br></strong>
           <p>London, Main, Street,Local Building, 012 A/B</p>
           <p>+(012) 345 678 901</p>
           <p>www.website.com</p>
-          <p>contancty@mail.com</p>
-        </div>
+          <p>contancty@mail.com</p></div>
 
-        <div class="col-xl-3" id="about_section-1_part3"></div>
-
-
-
-
-
-
-
-        <!-- this is a section-2 -->
-        <div
-          class="col-xl-12"
-          id="about_section-2_part"
-          style="padding: 0%; margin: 0%"
-        >
-          <div
-            class="col-xl-9"
-            style="
-              background-color: rgba(0, 229, 255, 0.327);
-              height: 67.5%;
-              font-size: 1350%;
-              text-align: center;
-              padding-top: 25%;
-              color: #ffffff9f;
-            "
-          >
-            <div class="row">
-              <div class="col-xl-12"><strong style="padding: 0%;margin: 0%;">BUSINESS</strong></div>
-            </div>
+        
+          <!-- this is a section-2 -->
+        <div class="col-xl-12"id="about_section-2_part" style="padding: 0%;"><img src="main_image.jpg" id="image"></div>
+          <div class="row">
+            <div  class="col-xl-9" id="left">
+              <div class="row">
+                <div class="col-xl-12" id="business" style="padding;-100%;"><strong>BUSINESS</strong></div> 
+                <div id="contain" style="">
+                  <strong ><P style="font-size: 50%;">2018|San Marino</P>
+                    <div class="underline"></div><br><P>It's a</P>
+                    <p>corporate</p>
+                    <p>flyer template <SPAN style="color:rgb(246,15,120);">. . .</SPAN> <div class="checkbok"></div></p>
+                  </strong></div>
+                 </div>
           </div>
-          <div
-            class="col-xl-3"
-            style="background-color: rgba(0, 0, 255, 0.51); height: 20%"
-          >
-          
+            <div class="col-xl-3" id="right"></div>
           </div>
-        </div>
-
-
-
-
-
-
-
+        
 
         <!-- this is section-3 -->
-
-        <div class="col-xl-3" id="about_section-3_part-1" id="left" style="font-size: xx-large;" >
-          <div class="titel"><p style="margin: -20px;"><strong>about</strong><br><p>our</p><p style="margin:-20px;">company</p></p></div>
+        <div class="col-xl-3" id="about_section-3_part-1">
+          <div id="line"></div><div><p ><strong>About</strong><br><p style="margin-top: -22px;">our</p><p style="margin-top:-22px;">company</p></p></div>
         </div>
-        <div class="col-xl-9" id="about_section-3_part-2"  style="">
+        <div class="col-xl-9" id="about_section-3_part-2">
          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
           ducimus quas? Voluptate animi, quod repudiandae vero explicabo porro
           velit quo nisi laboriosam quas est qui ea error facilis magnam
@@ -205,11 +252,7 @@
           velit quo nisi laboriosam quas est qui ea error facilis magnam autem."
         </div>
     
-
-
-
-
-
+         
         <!-- this is section-4 start -->
         <div class="col-xl-12">
         <div class="row" id="about_section-4">
@@ -253,12 +296,7 @@
       </div>
 
 
-
-
-
-
-
-        <!-- this is section-5  start-->
+       <!-- this is section-5  start-->
         <div class="col-xl-12">
           <div class="row" id="about_section-5">
            <div class="col-xl-3" style="padding-top:1%;font-size:30px"><strong>HEY DESIGN</strong></div>
